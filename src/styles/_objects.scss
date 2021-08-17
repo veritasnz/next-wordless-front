@@ -1,0 +1,77 @@
+/* Containers
+----------------------------------------------- */
+.o-wrapper {
+    max-width: $content-width;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: $padding-edge;
+    padding-right: $padding-edge;
+
+    @media (min-width: $breakpoint-m) {
+        width: 90%;
+    }
+}
+
+.o-container {
+    padding-top: 5rem;
+    padding-bottom: 6rem;
+
+    @media (min-width: $breakpoint-m) {
+        padding-top: 8rem;
+        padding-bottom: 10rem;
+    }
+}
+
+/* Buttons / Links
+----------------------------------------------- */
+.o-bttn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5em 1em;
+    line-height: 1.4;
+    text-align: center;
+    transition: color $transition-default, background-color $transition-default;
+
+    color: $c-white;
+    background: $c-theme-dark;
+    border: 2px solid $c-theme-dark;
+    border-radius: 0.5rem;
+
+    &:hover,
+    &:focus,
+    &:active {
+        color: $c-theme-dark;
+        background: $c-white;
+    }
+}
+
+/* Media
+----------------------------------------------- */
+// .o-media-container {
+//     width: 100%;
+//
+//     div {
+//         width: 100%;
+//         position: relative;
+//         padding-bottom: 100%; // 1:1
+//     }
+//
+//     iframe {
+//         position: absolute;
+//         left: 0;
+//         top: 0;
+//         width: 100%;
+//         height: 100%;
+//         display: block;
+//     }
+//
+//     @media screen and (min-width: $breakpoint-s) {
+//         div {
+//             padding-bottom: 55%;
+//         }
+//     }
+// }
+
+/* Misc
+----------------------------------------------- */

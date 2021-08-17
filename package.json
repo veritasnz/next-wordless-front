@@ -1,0 +1,33 @@
+{
+    "name": "demo-nextjs-wpgraphql-starter",
+    "version": "0.1.0",
+    "private": true,
+    "scripts": {
+        "dev": "next dev",
+        "build": "next build",
+        "start": "next start",
+        "lint": "next lint",
+        "analyze": "ANALYZE=true next build"
+    },
+    "dependencies": {
+        "@apollo/client": "^3.3.20",
+        "@next/bundle-analyzer": "^11.0.1",
+        "@plaiceholder/next": "^2.1.0",
+        "date-fns": "^2.22.1",
+        "framer-motion": "^4.1.17",
+        "graphql": "^15.5.0",
+        "next": "^11.1.0",
+        "next-seo": "^4.26.0",
+        "nodemailer": "^6.6.3",
+        "parse": "^3.3.0",
+        "plaiceholder": "^2.0.1",
+        "react": "17.0.2",
+        "react-dom": "17.0.2",
+        "sass": "^1.37.5",
+        "sharp": "^0.28.3"
+    },
+    "devDependencies": {
+        "eslint": "7.29.0",
+        "eslint-config-next": "11.0.0"
+    }
+}

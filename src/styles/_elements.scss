@@ -1,0 +1,77 @@
+:root {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    position: relative;
+
+    font-size: $fs-body;
+    font-weight: $fw-regular;
+    font-family: $ff-sans;
+
+    line-height: 1.6;
+    color: $c-black;
+    background: $c-white;
+    overflow-anchor: auto;
+}
+
+::selection {
+    color: $c-white;
+    background: $c-theme-light;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-weight: $fw-bold;
+    line-height: 1.2;
+}
+
+a {
+    &,
+    &:hover,
+    &:focus,
+    &:active {
+        // transition: all $transition-default;
+        text-decoration: none;
+        color: inherit;
+    }
+}
+
+p {
+    a {
+        &,
+        &:hover,
+        &:focus,
+        &:active {
+            color: $c-theme-light;
+        }
+
+        &:hover {
+            opacity: 0.7;
+        }
+    }
+}
+
+button,
+input[type="button"] {
+        cursor: pointer;
+}
+
+em {
+    font-style: normal;
+}
+
+img,
+svg,
+iframe {
+    display: block;
+    max-width: 100%;
+}
+
+img,
+svg {
+    height: auto;
+}

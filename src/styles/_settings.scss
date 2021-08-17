@@ -1,0 +1,45 @@
+// Colors / Shadows
+//----------------------------------------------- //
+$c-black: #000;
+$c-white: #fff;
+$c-grey: #e5e5e5;
+
+$c-theme-light: #6e98cc;
+$c-theme-dark: #2b568b;
+
+$c-form-sending: #0380b9;
+$c-form-sent: #01a00f;
+$c-form-error: #b61e1e;
+
+// Fonts
+//----------------------------------------------- //
+$ff-sans: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu,
+    Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+
+// Font Weights
+//----------------------------------------------- //
+$fw-regular: 400;
+$fw-bold: 600;
+
+// Font Sizes
+//----------------------------------------------- //
+$fs-tiny: 1.2rem;
+$fs-small: 1.4rem;
+$fs-body: 1.6rem;
+$fs-large: 1.8rem;
+
+// Measurements
+//----------------------------------------------- //
+$breakpoint-ss: 450px;
+$breakpoint-s: 600px;
+$breakpoint-m: 900px;
+$breakpoint-ml: 1200px;
+$breakpoint-l: 1400px;
+$breakpoint-xl: 1600px;
+
+$content-width: 90rem;
+$padding-edge: 2.6rem;
+
+// Misc
+//----------------------------------------------- //
+$transition-default: 150ms ease;

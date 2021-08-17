@@ -1,0 +1,444 @@
+/* Header
+----------------------------------------------- */
+.c-header {
+    padding: 2rem;
+
+    &__title {
+        font-size: 2rem;
+        font-weight: bold;
+        line-height: 1;
+    }
+
+    &__text {
+        display: none;
+    }
+
+    &__navbar {
+        display: block;
+        text-align: right;
+        font-weight: bold;
+
+        > a {
+            display: inline-block;
+            padding: 0.5em;
+            font-size: 1.6rem;
+
+            &:hover,
+            &:focus,
+            &:active,
+            &.link-active {
+                color: $c-theme-light;
+            }
+        }
+    }
+
+    @media (min-width: $breakpoint-s) {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        &__wrap {
+            margin-right: 3rem;
+        }
+    }
+
+    @media (min-width: $breakpoint-m) {
+        &__title {
+            font-size: 3rem;
+        }
+
+        &__text {
+            display: block;
+        }
+
+        &__navbar {
+            font-weight: bold;
+
+            > a {
+                font-size: 2.6rem;
+            }
+        }
+    }
+}
+
+/* Footer
+----------------------------------------------- */
+.c-footer {
+    margin-top: 6rem;
+    padding-bottom: 5rem;
+    text-align: center;
+
+    &__wrap {
+        padding-top: 3rem;
+        border-top: 1px solid $c-grey;
+    }
+
+    &__nav {
+        > a {
+            display: inline-block;
+            padding: 0.5em;
+            font-size: 2rem;
+            font-weight: $fw-bold;
+
+            &:hover,
+            &:focus,
+            &:active,
+            &.link-active {
+                color: $c-theme-light;
+            }
+        }
+    }
+
+    &__copy {
+        margin-top: 3rem;
+        font-size: $fs-tiny;
+    }
+
+    @media (min-width: $breakpoint-m) {
+        margin-top: 12rem;
+
+        &__nav {
+            > a {
+                font-size: 2.8rem;
+            }
+        }
+    }
+}
+
+/* Page Title
+----------------------------------------------- */
+.c-page-title {
+    margin-bottom: 1.4em;
+    font-size: 4rem;
+    line-height: 1.15;
+    text-align: center;
+}
+
+/* Section Title
+----------------------------------------------- */
+.c-section-title {
+    margin-bottom: 1.4em;
+    font-size: 3rem;
+    line-height: 1.15;
+    text-align: center;
+}
+
+/* Featured Image
+----------------------------------------------- */
+.c-featured-image {
+    width: 100%;
+    position: relative;
+    margin-bottom: 3rem;
+    overflow: hidden;
+
+    // Overwrite <Image> child styles
+    > div:nth-child(2) {
+        display: block !important;
+    }
+}
+
+/* Single Content
+----------------------------------------------- */
+.c-single-content {
+    margin-top: 4rem;
+    padding-top: 3rem;
+    border-top: 1px solid $c-grey;
+
+    &__empty {
+        font-size: 2rem;
+        text-align: center;
+        opacity: 0.5;
+    }
+
+    @media (min-width: $breakpoint-ss) {
+        margin-top: 6rem;
+        padding-top: 5rem;
+    }
+}
+
+/* More Posts
+----------------------------------------------- */
+.c-more-posts {
+    margin-top: 8rem;
+    padding-top: 3rem;
+    border-top: 1px solid $c-grey;
+
+    @media (min-width: $breakpoint-ss) {
+        margin-top: 12rem;
+        padding-top: 5rem;
+    }
+}
+
+/* Post Grid
+----------------------------------------------- */
+.c-post-grid {
+    /*ul*/
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    width: 100%;
+    list-style: none;
+}
+
+/* Post Grid Item
+----------------------------------------------- */
+.c-post-item {
+    // li
+
+    /* Size styles */
+    display: block;
+    margin-bottom: 2.5rem;
+
+    @media (max-width: #{$breakpoint-ss - 1px}) {
+        width: 100%;
+        max-width: 250px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    @media (min-width: $breakpoint-ss) {
+        width: calc(50% - 1.25rem);
+        margin-right: 2.5rem;
+
+        &:nth-child(2n) {
+            margin-right: 0;
+        }
+
+        &:last-child {
+            margin-right: 0 !important;
+        }
+    }
+
+    @media (min-width: 750px) {
+        width: calc(33.3% - 1.667rem);
+
+        &:nth-child(2n) {
+            margin-right: 2.5rem;
+        }
+
+        &:nth-child(3n) {
+            margin-right: 0;
+        }
+    }
+
+    /* Design styles */
+    border: 1px solid $c-grey;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba($c-black, 0.05);
+
+    &.c-post-item--sticky {
+        border-color: $c-theme-light;
+    }
+
+    &:hover,
+    &:focus,
+    &:active {
+        color: $c-theme-light;
+        border-color: $c-theme-light;
+    }
+
+    > a {
+        display: block;
+        padding: 2rem 2rem 2.6rem;
+    }
+
+    &__image {
+        width: 100%;
+        position: relative;
+        margin-bottom: 1.2rem;
+        padding-bottom: 100%;
+        overflow: hidden;
+
+        &,
+        & img {
+            border-radius: 0.7rem;
+        }
+
+        img {
+            object-fit: cover;
+        }
+    }
+
+    &__title {
+        margin: 0 0 0.8em 0;
+        font-size: 2rem;
+        text-align: center;
+
+        .c-post-item--sticky & {
+            color: $c-theme-dark;
+        }
+    }
+
+    &__excerpt {
+        margin: 0;
+        font-size: 1.5rem;
+        line-height: 1.5;
+    }
+}
+
+/* Pagination
+----------------------------------------------- */
+.c-pagination {
+    display: flex;
+    margin-top: 5rem;
+    font-size: $fs-body;
+
+    a {
+        &:hover,
+        &:focus,
+        &:active,
+        &.link-active {
+            color: $c-theme-light;
+        }
+    }
+
+    &__arrow,
+    &__wrap > li > a,
+    &__wrap > li > span {
+        display: inline-block;
+        margin: 0 0.2em 0.2em;
+        text-align: center;
+        line-height: 1;
+        padding: 0.4em 1em;
+        border: 1px solid $c-grey;
+        border-radius: 5px;
+        box-shadow: 0 0 15px rgba($c-black, 0.05);
+    }
+
+    &,
+    &__wrap {
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    &__arrow {
+        /*ul*/
+        border-color: $c-theme-light;
+    }
+
+    &__wrap {
+        /*ul*/
+        display: none;
+        list-style: none;
+
+        .active > span {
+            opacity: 0.5;
+        }
+    }
+
+    @media (min-width: $breakpoint-s) {
+        &__wrap {
+            display: flex;
+        }
+    }
+}
+
+/* Form
+----------------------------------------------- */
+.c-form {
+    &,
+    &__field {
+        font-size: $fs-large;
+    }
+
+    &__control {
+        & + & {
+            margin-top: 2rem;
+        }
+    }
+
+    &__label {
+        /* label */
+        display: block;
+        margin-bottom: 0.35em;
+        font-size: 1.1em;
+        font-weight: $fw-bold;
+    }
+
+    &__field {
+        /* input, textarea */
+        display: block;
+        width: 100%;
+        padding: 0.3em;
+        border: 2px solid $c-grey;
+        box-shadow: none;
+        resize: vertical;
+        border-radius: 0.5rem;
+
+        &:focus {
+            outline-color: $c-theme-light;
+        }
+
+        .form__control--invalid & {
+            border-color: $c-form-error;
+
+            &:focus {
+                outline-color: $c-theme-light;
+            }
+        }
+    }
+
+    &__error {
+        color: $c-form-error;
+        font-size: 0.7em;
+    }
+
+    &__actions {
+        margin-top: 4rem;
+        text-align: right;
+
+        button {
+            &:disabled {
+                opacity: 0.4;
+                pointer-events: none;
+            }
+        }
+    }
+
+    &__status {
+        max-width: 60rem;
+        margin: 5rem auto 0;
+        padding: 2em 1em;
+        border: 2px solid;
+        border-radius: 0.5rem;
+        text-align: center;
+
+        &--sending {
+            color: $c-form-sending;
+            border-color: $c-form-sending;
+        }
+
+        &--sent {
+            color: $c-form-sent;
+            border-color: $c-form-sent;
+        }
+
+        &--error {
+            color: $c-form-error;
+            border-color: $c-form-error;
+        }
+    }
+
+    // Honeypot (hachimitsu = honey in Japanese)
+    &__hachimitsu {
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        left: 0;
+
+        &,
+        & p,
+        & label,
+        & input {
+            height: 0;
+            width: 0;
+            font-size: 1px;
+            color: transparent;
+            opacity: 0;
+            border: none;
+            background: none;
+            box-shadow: none;
+        }
+    }
+}
