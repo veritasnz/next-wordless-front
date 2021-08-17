@@ -13,7 +13,7 @@ Store your posts and editable site data with Wordpress, and use Next.js with Gra
 ## Features
 
 -   Server-side rendering for all pages (including SEO)
--   WP Post & Page support
+-   WP Post & Page support (About & Contact page included by default)
 -   Page transition animations
 -   Image placeholders
 -   Basic SEO support (no WP plugins required)
@@ -93,3 +93,7 @@ _Entering your details for the "Custom Action" trigger is required, as the [them
 
 -   Big shoutout to [Colby Fayock](https://twitter.com/colbyfayock) and his excellent [headless WP Next.js template](https://github.com/colbyfayock/next-wordpress-starter), which I drew heavy inspiration from.
 -   Also thanks to [Kurage Digital](https://kuragedigital.com/) for hosting the Wordpress instance for the sample site
+
+## 🐛 Bugs
+
+-   In production, on dynamic `[post]` pages, Next.js produces a 404 error when trying to get the JSON chunks of the other posts (??). Requires investigation
