@@ -33,6 +33,8 @@ This template does not (out of the box) support a few features typical of a stan
 -   Search feature implementation
 -   Support for Post categories and archives
 -   Gutenburg-specific default block styles
+-   Not compatible with Intuitive Custom Post Order (plugin)
+    -   This template orders posts by date _only_
 
 ## Requirements
 
