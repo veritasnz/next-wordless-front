@@ -16,11 +16,15 @@ let transporter = nodemailer.createTransport({
  * @returns {Object} mailId
  */
 export async function sendUserReceiptEmail(message) {
-    let info = await transporter.sendMail({
-        from: `"${message.siteName}" <${process.env.SMTP_USER}>`,
-        to: message.email, // list of receivers
-        subject: `Your inquiry has been received – ${message.siteName}`,
-        text: `
+    console.log("Attempting to send USER receipt with following message:");
+    console.log(message);
+
+    let info = await transporter
+        .sendMail({
+            from: `"${message.siteName}" <${process.env.SMTP_USER}>`,
+            to: message.email, // list of receivers
+            subject: `Your inquiry has been received – ${message.siteName}`,
+            text: `
             Hello ${message.name},
 
             Your message to ${message.siteName} has been received.
@@ -29,7 +33,11 @@ export async function sendUserReceiptEmail(message) {
             Regards,
             ${message.siteName}
         `,
-    });
+        })
+        .catch((e) => {
+            console.log("Error sending user receipt.");
+            console.log(`${e.name}: ${e.message}`);
+        });
 
     return info.messageId;
 }
@@ -40,18 +48,26 @@ export async function sendUserReceiptEmail(message) {
  * @returns {Object} mailId
  */
 export async function sendAdminReceiptEmail(message) {
-    let info = await transporter.sendMail({
-        from: `"${message.siteName}" <${process.env.MAIL_NOREPLY}>`,
-        to: process.env.SMTP_USER, // list of receivers
-        subject: `Customer inquiry received – ${message.siteName}`,
-        text: `
+    console.log("Attempting to send ADMIN receipt with following message:");
+    console.log(message);
+
+    let info = await transporter
+        .sendMail({
+            from: `"${message.siteName}" <${process.env.MAIL_NOREPLY}>`,
+            to: process.env.SMTP_USER, // list of receivers
+            subject: `Customer inquiry received – ${message.siteName}`,
+            text: `
             The following inquiry has been received:
             
             Name: ${message.name}
             Email: ${message.email}
             Message: ${message.message}
         `,
-    });
+        })
+        .catch((e) => {
+            console.log("Error sending user receipt.");
+            console.log(`${e.name}: ${e.message}`);
+        });
 
     return info.messageId;
 }
