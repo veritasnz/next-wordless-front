@@ -38,6 +38,7 @@ This template does not (out of the box) support a few features typical of a stan
 -   [WordPress](https://wordpress.org/)
 -   [ACF Pro Wordpress Plugin](https://www.advancedcustomfields.com/pro/) (necessary for 'Site Options' option page)
 -   [WPGraphQL Wordpress Plugin](https://www.wpgraphql.com/)
+-   [WPGraphQL for Advanced Custom Fields](https://github.com/wp-graphql/wp-graphql-acf)
 -   Environment variables (see below)
 
 ### Environment Variables
