@@ -8,7 +8,7 @@ Store your posts and editable site data with Wordpress, and use Next.js with Gra
 
 [🔗 Sample site](wordpress.seanv.dev)
 
-**⚠️  NOTE:** This repo contains the 'front' side of the project. The code to run the backend side can be found at [here](https://github.com/veritasnz/next-wordless-back), and is in the form of a Wordpress theme.
+**⚠️&nbsp;&nbsp;NOTE:** This repo contains the 'front' side of the project. The code to run the backend side can be found at [here](https://github.com/veritasnz/next-wordless-back), and is in the form of a Wordpress theme.
 
 ## Features
 
@@ -36,7 +36,7 @@ This template does not (out of the box) support a few features typical of a stan
 ## Requirements
 
 -   [WordPress](https://wordpress.org/)
--   [ACF Pro Wordpress Plugin](https://www.advancedcustomfields.com/pro/)
+-   [ACF Pro Wordpress Plugin](https://www.advancedcustomfields.com/pro/) (necessary for 'Site Options' option page)
 -   [WPGraphQL Wordpress Plugin](https://www.wpgraphql.com/)
 -   Environment variables (see below)
 
@@ -59,7 +59,7 @@ Create a new file locally called `.env.local` and add the following:
 | PARSE_APP_ID               | No       | (Optional) App ID for your Parse server                                  |
 | PARSE_JS_KEY               | No       | (Optional) JS Key for your Parse server                                  |
 
-## Installation
+### Installation
 
 To install:
 
@@ -78,6 +78,14 @@ npm run dev
 ```
 
 The project should now be available at [http://localhost:3000](http://localhost:3000)!
+
+### Setting up WP Webhooks
+
+You can set up webhooks with your Next.js provider (e.g. Vercel/Netlify) to execute a rebuild whenever a post, page or ACF option page is edited.
+
+This is highly recommended, and can be done by installing the Wordpress plugin [WP Webhooks](https://wordpress.org/plugins/wp-webhooks/). Enter your Webhook URL for the "Post updated", "Post created", "Post trashed" and "Custom Action" triggers.
+
+_Entering your details for the "Custom Action" trigger is required, as the [theme for the backend](https://github.com/veritasnz/next-wordless-back) has a filter to pick up on ACF options page change._
 
 ## 📢 Shoutouts
 
