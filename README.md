@@ -6,9 +6,9 @@ My extendable template for quickstarting the development of headless Wordpress s
 
 Store your posts and editable site data with Wordpress, and use Next.js with GraphQL to pull it off the server and display it.
 
-[Sample site](wordpress.seanv.dev)
+[🔗 Sample site](wordpress.seanv.dev)
 
-**⚠️ NOTE** This repo contains the 'front' side of the project. The code to run the backend side can be found at [here](https://github.com/veritasnz/next-wordless-back), and is in the form of a Wordpress theme.
+**⚠️  NOTE:** This repo contains the 'front' side of the project. The code to run the backend side can be found at [here](https://github.com/veritasnz/next-wordless-back), and is in the form of a Wordpress theme.
 
 ## Features
 
