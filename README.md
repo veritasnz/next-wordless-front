@@ -79,7 +79,7 @@ npm run dev
 
 The project should now be available at [http://localhost:3000](http://localhost:3000)!
 
-## 🥾 Shoutouts
+## 📢 Shoutouts
 
 -   Big shoutout to [Colby Fayock](https://twitter.com/colbyfayock) and his excellent [headless WP Next.js template](https://github.com/colbyfayock/next-wordpress-starter) which I drew heavy inspiration from.
 -   Also thanks to [Kurage Digital](https://kuragedigital.com/) for hosting the Wordpress instance for the sample site
