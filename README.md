@@ -32,6 +32,7 @@ This template does not (out of the box) support a few features typical of a stan
 -   Advanced SEO, e.g. RSS/Sitemap implementation
 -   Search feature implementation
 -   Support for Post categories and archives
+-   Gutenburg-specific default block styles
 
 ## Requirements
 
