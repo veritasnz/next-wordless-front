@@ -2,11 +2,11 @@ _**DISCLAIMER:** This is primarily a portfolio project and boilerplate made for 
 
 # Next.js /w Headless WordPress Template (WIP)
 
-My extendable template for quickstarting the development of headless Wordpress sites, utilizing the power of React, Next.js and server-side rendering.
+My extendable template for quick starting the development of headless Wordpress sites, utilizing the power of React, Next.js and server-side rendering.
 
 Store your posts and editable site data with Wordpress, and use Next.js with GraphQL to pull it off the server and display it.
 
-[🔗 Sample site](wordpress.seanv.dev)
+[🔗&nbsp;&nbsp;Sample site](https://wordless.seanv.dev/)
 
 **⚠️&nbsp;&nbsp;NOTE:** This repo contains the 'front' side of the project. The code to run the backend side can be found at [here](https://github.com/veritasnz/next-wordless-back), and is in the form of a Wordpress theme.
 
@@ -19,7 +19,7 @@ Store your posts and editable site data with Wordpress, and use Next.js with Gra
 -   Basic SEO support (no WP plugins required)
 -   A simple contact form:
     -   On submit, receipt emails sent to both user & admin on form submission
-    -   Optional system to backup emails using a Parse server (e.g. with [Back4App](https://www.back4app.com/))
+    -   Optional system to back up emails using a Parse server (e.g. with [Back4App](https://www.back4app.com/))
     -   Spam protection
         -   Rate limiting (server-side)
         -   Custom honeypot (client-side)
@@ -89,5 +89,5 @@ _Entering your details for the "Custom Action" trigger is required, as the [them
 
 ## 📢 Shoutouts
 
--   Big shoutout to [Colby Fayock](https://twitter.com/colbyfayock) and his excellent [headless WP Next.js template](https://github.com/colbyfayock/next-wordpress-starter) which I drew heavy inspiration from.
+-   Big shoutout to [Colby Fayock](https://twitter.com/colbyfayock) and his excellent [headless WP Next.js template](https://github.com/colbyfayock/next-wordpress-starter), which I drew heavy inspiration from.
 -   Also thanks to [Kurage Digital](https://kuragedigital.com/) for hosting the Wordpress instance for the sample site
