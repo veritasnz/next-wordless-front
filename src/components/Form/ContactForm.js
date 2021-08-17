@@ -13,7 +13,7 @@ import TextareaField from "./TextareaField";
 import Honeypot from "./Honeypot";
 
 const postStatusFeedbackMessages = {
-    SENDING: "Sending enquiry...",
+    SENDING: "Sending enquiry, this may take a few seconds...",
     SENT: "Enquiry sent! \n Please check your emails for an email of receipt",
     ERROR: "An error occured. Please try again in a few minutes",
 };
