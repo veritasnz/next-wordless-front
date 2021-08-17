@@ -29,5 +29,9 @@
     "devDependencies": {
         "eslint": "7.29.0",
         "eslint-config-next": "11.0.0"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/veritasnz/next-wordless-front"
     }
 }
