@@ -34,7 +34,7 @@ export default async function handler(req, res) {
 
             response = {
                 code: 200,
-                message: `User Receipt ID: ${userReceiptId}, Admin Receipt ID: ${adminReceiptId}`,
+                message: "Receipt email sent succesfully",
             };
         } catch (error) {
             response = {
