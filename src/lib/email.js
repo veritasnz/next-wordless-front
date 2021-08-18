@@ -1,3 +1,7 @@
+/**
+ * Used by /api/contact-enquiry/ serverless functions
+ */
+
 const nodemailer = require("nodemailer");
 
 let transporter = nodemailer.createTransport({
