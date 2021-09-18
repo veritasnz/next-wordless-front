@@ -1,8 +1,8 @@
-_**DISCLAIMER:** This is primarily a portfolio project and boilerplate made for my own personal use. This project has not been tested thoroughly in production_
+_**DISCLAIMER:** This is primarily a portfolio project and boilerplate, made for my own personal use. This project has not been battle-tested in production. For a more well supported and documented Headless WP alternative, I suggest taking a look at [Frontity](https://frontity.org/) (vanilla React) or [Faust JS](https://faustjs.org/) (NextJS)_
 
 # Next.js /w Headless WordPress Template (WIP)
 
-My extendable template for quick starting the development of headless Wordpress sites, utilizing the power of React, Next.js and server-side rendering.
+My extendable template concept developing headless Wordpress sites, utilizing the power of React, Next.js and server-side rendering.
 
 Store your posts and editable site data with Wordpress, and use Next.js with GraphQL to pull it off the server and display it.
 
